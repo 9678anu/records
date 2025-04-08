@@ -5,7 +5,6 @@ body {
   font-family: Arial, sans-serif;
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
-
 /* Header */
 .header {
   display: flex;
@@ -34,17 +33,31 @@ body {
   font-weight: bold;
   text-decoration: none;
   margin: 0 15px;
-  position: relative;
   padding: 5px 0;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
 .desktop-nav a:hover {
   color: #705ae2;
 }
 
-/* Dropdown Styles */
+/* Desktop Dropdown */
 .dropdown {
   position: relative;
+}
+
+.dropbtn {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-arrow {
+  margin-left: 5px;
 }
 
 .dropdown-content {
@@ -56,6 +69,7 @@ body {
   z-index: 1;
   top: 100%;
   left: 0;
+  border-radius: 4px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -65,94 +79,124 @@ body {
 .dropdown-content a {
   padding: 12px 16px;
   display: block;
+  color: #000;
+  text-decoration: none;
   border-bottom: 1px solid #f1f1f1;
+  transition: background 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background: #f9f9f9;
 }
 
 /* Mobile Menu Button */
 .mobile-menu-btn {
   display: none;
-  width: 30px;
-  height: 21px;
   flex-direction: column;
   justify-content: space-between;
+  width: 30px;
+  height: 20px;
   cursor: pointer;
-  z-index: 1001;
+  padding: 10px;
+  background: transparent;
+  border: none;
 }
 
 .mobile-menu-btn span {
-  height: 3px;
   width: 100%;
-  background-color: #000;
-  border-radius: 3px;
+  height: 3px;
+  background:#000;
   transition: all 0.3s ease;
 }
 
 /* Mobile Sidebar */
 .mobile-sidebar {
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(to bottom right, #705ae2, #fff);
+  color: #fff;
   position: fixed;
   top: 0;
-  right: -100%;
-  width: 80%;
-  max-width: 300px;
-  height: 100vh;
-  background-color: #fff;
-  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-  transition: right 0.3s ease;
-  z-index: 1000;
+  left: -250px;
+  transition: left 0.3s ease;
+  z-index: 1001;
   padding-top: 20px;
-  overflow-y: auto;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
 }
-
-.mobile-sidebar.active {
-  right: 0;
-}
-
-.sidebar-logo {
-  text-align: center;
-  padding: 20px;
-  border-bottom: 1px solid #eee;
-}
-
 .sidebar-logo img {
-  height: 40px;
-  width: auto;
-}
-
-.mobile-nav {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
+  width: 100px;
+  margin: 0 auto 20px;
+  display: block;
 }
 
 .mobile-nav a {
-  color: #000;
-  padding: 12px 0;
+  display: block;
+  padding: 15px;
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
-  border-bottom: 1px solid #f1f1f1;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.mobile-nav a:hover {
+  background: #555;
+}
+
+/* Mobile Dropdown */
+.mobile-dropdown {
+  position: relative;
+}
+
+.mobile-dropbtn {
+  display: block;
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 .mobile-dropdown-content {
   display: none;
-  padding-left: 15px;
+  background: linear-gradient(to bottom right, #705ae2, #fff);
+  padding: 0;
 }
 
 .mobile-dropdown-content a {
-  font-size: 14px;
-  font-weight: normal;
+  padding: 12px 16px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
 }
 
-/* Active state for mobile menu */
-.mobile-menu-btn.active span:nth-child(1) {
-  transform: translateY(9px) rotate(45deg);
+.mobile-dropdown-content a:hover {
+  background: linear-gradient(to bottom right, #705ae2, #fff);
 }
 
-.mobile-menu-btn.active span:nth-child(2) {
-  opacity: 0;
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .desktop-nav {
+      display: none;
+  }
 
-.mobile-menu-btn.active span:nth-child(3) {
-  transform: translateY(-9px) rotate(-45deg);
+  .mobile-menu-btn {
+      display: flex;
+  }
+
+  .mobile-sidebar {
+      left: -250px;
+  }
+
+  .mobile-sidebar.active {
+      left: 0;
+  }
+
+  .mobile-dropbtn {
+      position: relative;
+  }
+
+  .mobile-dropdown.active .mobile-dropdown-content {
+      display: block;
+  }
 }
 
 /* Overlay when mobile menu is open */

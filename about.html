@@ -11,46 +11,36 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="responsive.css">
     <script>
-  document.addEventListener('DOMContentLoaded', function() {
+      
+      document.addEventListener('DOMContentLoaded', function() {
   const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
   const mobileSidebar = document.querySelector('.mobile-sidebar');
   const overlay = document.createElement('div');
   overlay.className = 'overlay';
   document.body.appendChild(overlay);
   
-  // Create close button
-  const closeBtn = document.createElement('button');
-  closeBtn.className = 'close-btn';
-  closeBtn.innerHTML = '&times;';
-  const sidebarHeader = document.createElement('div');
-  sidebarHeader.className = 'sidebar-header';
-  sidebarHeader.innerHTML = `
-    <div class="sidebar-logo">
-      <img src="logo.png" alt="Logo">
-    </div>
-  `;
-  sidebarHeader.appendChild(closeBtn);
-  mobileSidebar.insertBefore(sidebarHeader, mobileSidebar.firstChild);
-
   // Toggle mobile menu
-  function toggleMenu() {
-    mobileMenuBtn.classList.toggle('active');
+  mobileMenuBtn.addEventListener('click', function() {
+    this.classList.toggle('active');
     mobileSidebar.classList.toggle('active');
     overlay.classList.toggle('active');
-    document.body.classList.toggle('no-scroll');
-  }
-
-  mobileMenuBtn.addEventListener('click', toggleMenu);
-  closeBtn.addEventListener('click', toggleMenu);
-  overlay.addEventListener('click', toggleMenu);
+  });
   
-  // Improved dropdown toggle
+  // Close menu when clicking overlay
+  overlay.addEventListener('click', function() {
+    mobileMenuBtn.classList.remove('active');
+    mobileSidebar.classList.remove('active');
+    this.classList.remove('active');
+  });
+  
+  // Toggle mobile dropdowns
   const mobileDropBtns = document.querySelectorAll('.mobile-dropbtn');
   mobileDropBtns.forEach(btn => {
     btn.addEventListener('click', function(e) {
       e.preventDefault();
-      const dropdown = this.closest('.mobile-dropdown');
-      dropdown.classList.toggle('active');
+      const dropdownContent = this.nextElementSibling;
+      dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+      this.querySelector('.dropdown-arrow').style.transform = dropdownContent.style.display === 'block' ? 'rotate(180deg)' : 'rotate(0)';
     });
   });
 });
