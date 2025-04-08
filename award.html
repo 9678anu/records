@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United Nation Book of World Records</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+  const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+  const mobileSidebar = document.querySelector('.mobile-sidebar');
+  const overlay = document.createElement('div');
+  overlay.className = 'overlay';
+  document.body.appendChild(overlay);
+  
+  // Toggle mobile menu
+  mobileMenuBtn.addEventListener('click', function() {
+    this.classList.toggle('active');
+    mobileSidebar.classList.toggle('active');
+    overlay.classList.toggle('active');
+  });
+  
+  // Close menu when clicking overlay
+  overlay.addEventListener('click', function() {
+    mobileMenuBtn.classList.remove('active');
+    mobileSidebar.classList.remove('active');
+    this.classList.remove('active');
+  });
+  
+  // Toggle mobile dropdowns
+  const mobileDropBtns = document.querySelectorAll('.mobile-dropbtn');
+  mobileDropBtns.forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const dropdownContent = this.nextElementSibling;
+      dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+      this.querySelector('.dropdown-arrow').style.transform = dropdownContent.style.display === 'block' ? 'rotate(180deg)' : 'rotate(0)';
+    });
+  });
+});
+    </script>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<div class="header">
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+  </div>
+  
+  <!-- Desktop Navigation -->
+  <nav class="desktop-nav">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <a href="#" class="dropbtn">About <i class="dropdown-arrow">▼</i></a>
+      <div class="dropdown-content">
+        <a href="about.html">About Us</a>
+        <a href="#">Documents</a>
+        <a href="#">Why UNBWR?</a>
+      </div>
+    </div>
+    <a href="record.html">Set A Record</a>
+    <a href="award.html">Awards</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="certificate.html">Find your Certificate</a>
+    <a href="store.html">Our Store</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  
+  <!-- Mobile Menu Button -->
+  <div class="mobile-menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
+  <!-- Mobile Sidebar -->
+  <div class="mobile-sidebar">
+    <div class="sidebar-logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <div class="mobile-dropdown">
+        <a href="#" class="mobile-dropbtn">About <i class="dropdown-arrow">▼</i></a>
+        <div class="mobile-dropdown-content">
+          <a href="about.html">About Us</a>
+          <a href="#">Documents</a>
+          <a href="#">Why UNBWR?</a>
+        </div>
+      </div>
+      <a href="record.html">Set A Record</a>
+      <a href="award.html">Awards</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="certificate.html">Find your Certificate</a>
+      <a href="store.html">Our Store</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</div>
+        <section class="hero">
+          <div class="hero-content">
+            <h1>Awards</h1>
+            <p class="link-line">• Award < <a href="index.html">Home</a></p>
+          </div>
+        </section>
+
+
+        <section>
+            <div class="title-container">
+              <div class="text-container">
+            <h2>1. World Record</h2>
+            <p>World level record certifies that you make a record in entire globe which makes you unique in the entire globe region.</p>
+        
+            <h2>2. Continental Record</h2>
+            <ul>
+              <li>North American Record</li>
+              <li>South American Record</li>
+              <li>European Record</li>
+              <li>African Record</li>
+              <li>Asian Record</li>
+              <li>Oceania Record</li>
+            </ul>
+        
+            <h2>3. National Record</h2>
+            <p>Record at National level from any country in citizenship with USA, UK, Canada etc.</p>
+        
+            <h2>4. Youth Awards</h2>
+            <ul>
+              <li>Youth Scientific Educational Award</li>
+              <li>Youth Humanities Research Award</li>
+              <li>Youth Commercial Educational Award</li>
+              <!-- Add more as needed -->
+            </ul>
+        
+            <h2>5. Champion/Sports Awards</h2>
+            <ul>
+              <li>Platinum Award</li>
+              <li>Diamond Award</li>
+              <li>Gold Award</li>
+              <li>Silver Award</li>
+              <li>Bronze Award</li>
+            </ul>
+        
+            <h2>6. Education</h2>
+            <ul>
+              <li>Award for Educational Achievement</li>
+              <li>Award for Educational Excellence</li>
+            </ul>
+        
+            <h2>7. Police & Military Volunteers</h2>
+            <ul>
+              <li>Medal of Nation’s Service</li>
+              <li>Medal of International Service</li>
+            </ul>
+        
+            <h2>8. Journalist Awards</h2>
+            <ul>
+              <li>Nation’s Journalist Award</li>
+              <li>International Journalist Award</li>
+            </ul>
+        
+            <h2>9. National Health Practitioner Awards</h2>
+            <ul>
+              <li>National Award</li>
+              <li>International Award</li>
+            </ul>
+        
+            <h2>Types</h2>
+            <p>The <strong>Iconic Awards</strong> honor the best in interior design...</p>
+        
+            <h2>Corporate Awards</h2>
+            <p><strong>Corporate awards</strong> are for team achievements...</p></div>
+            <div class="image-container">
+                <img src="https://media-hosting.imagekit.io/c68b27263d9b4a61/6__1_-removebg-preview%20(1).png?Expires=1838564064&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=cyrRhiLjC2l-NSZkL7-K7clXegK1Qt9u3qK9iYZzzpEcP7IxbqdI5NAH1YojCRBXJzZNCIsdGaENS6kPI1TUsH5OweyIixzquqhY-PHzEnlVICzwvrO98Rz7G69rW63wRqaZ5wqVNPJ1KxY5xRhtC8INODvsAih2KVmYg1sQMT5ObHBQHuSUAyz0r5~O9Ns6LOAuhaWCCgpAvMpJPDofFOyX6jFgL3AYtHpt--10aM5CtplIdWAAxx1AybcOvGVyRA6V2t13id1fR2V3mdUSc6gmftceOjJe7S7iJZOJsB3aOev56ukHhhEZysvznqAfDgt1qPd37ar5yZ6AOIFUEg__">
+            </div>
+          </section>
+        
+
+
+
+         <!-- Footer Start -->
+    <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo & Contact -->
+          <div class="footer-section logo-section">
+            <img src="logo.png" alt="UNBWR Logo" class="footer-logo">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="footer-address">
+              Head Office - 2332 William Dr,<br>
+              No.2, Santa Clara - 95050,<br>
+              California, USA
+            </p>
+          </div>
+      
+          <!-- Site Links -->
+          <div class="footer-section">
+            <h3>Site Link</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="record.html">Set a Record</a></li>
+              <li><a href="#">Awards</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">My Certificate</a></li>
+              <li><a href="#">Stores</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+      
+          <!-- About Us -->
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <ul>
+              <li><a href="#">Objective</a></li>
+              <li><a href="#">Purpose</a></li>
+              <li><a href="#">Vision</a></li>
+              <li><a href="#">Mission</a></li>
+              <li><a href="#">Values</a></li>
+            </ul>
+          </div>
+      
+          <!-- Resources -->
+          <div class="footer-section">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Resource 1</a></li>
+              <li><a href="#">Resource 2</a></li>
+              <li><a href="#">Resource 3</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+          Copyright © 2025 UNBWR | United Nations Book of World Records
+        </div>
+      </footer>
+      <!-- Footer End -->
+      
+    </body>
+    </html>

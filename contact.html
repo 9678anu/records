@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United Nation Book of World Records</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+  const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+  const mobileSidebar = document.querySelector('.mobile-sidebar');
+  const overlay = document.createElement('div');
+  overlay.className = 'overlay';
+  document.body.appendChild(overlay);
+  
+  // Toggle mobile menu
+  mobileMenuBtn.addEventListener('click', function() {
+    this.classList.toggle('active');
+    mobileSidebar.classList.toggle('active');
+    overlay.classList.toggle('active');
+  });
+  
+  // Close menu when clicking overlay
+  overlay.addEventListener('click', function() {
+    mobileMenuBtn.classList.remove('active');
+    mobileSidebar.classList.remove('active');
+    this.classList.remove('active');
+  });
+  
+  // Toggle mobile dropdowns
+  const mobileDropBtns = document.querySelectorAll('.mobile-dropbtn');
+  mobileDropBtns.forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const dropdownContent = this.nextElementSibling;
+      dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+      this.querySelector('.dropdown-arrow').style.transform = dropdownContent.style.display === 'block' ? 'rotate(180deg)' : 'rotate(0)';
+    });
+  });
+});
+    </script>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<div class="header">
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+  </div>
+  
+  <!-- Desktop Navigation -->
+  <nav class="desktop-nav">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <a href="#" class="dropbtn">About <i class="dropdown-arrow">▼</i></a>
+      <div class="dropdown-content">
+        <a href="about.html">About Us</a>
+        <a href="#">Documents</a>
+        <a href="#">Why UNBWR?</a>
+      </div>
+    </div>
+    <a href="record.html">Set A Record</a>
+    <a href="award.html">Awards</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="certificate.html">Find your Certificate</a>
+    <a href="store.html">Our Store</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  
+  <!-- Mobile Menu Button -->
+  <div class="mobile-menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
+  <!-- Mobile Sidebar -->
+  <div class="mobile-sidebar">
+    <div class="sidebar-logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <div class="mobile-dropdown">
+        <a href="#" class="mobile-dropbtn">About <i class="dropdown-arrow">▼</i></a>
+        <div class="mobile-dropdown-content">
+          <a href="about.html">About Us</a>
+          <a href="#">Documents</a>
+          <a href="#">Why UNBWR?</a>
+        </div>
+      </div>
+      <a href="record.html">Set A Record</a>
+      <a href="award.html">Awards</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="certificate.html">Find your Certificate</a>
+      <a href="store.html">Our Store</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</div>
+        <section class="hero">
+          <div class="hero-content">
+            <h1>Contact</h1>
+            <p class="link-line">• contact < <a href="index.html">Home</a></p>
+          </div>
+        </section>
+
+        <section class="contact-main">
+          <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p><strong>Numbers</strong><br> +1-408-612-5881</p>
+            <p><strong>Email</strong><br>
+              connect@unbookofworldrecords.com<br>
+              connect.unbur@gmail.com
+            </p>
+            <p><strong>Business Hours</strong><br>
+              Monday — Friday 9am – 5pm<br>
+              Saturday — 10am – 3pm<br>
+              Sunday — Closed
+            </p>
+          </div>
+      
+          <div class="contact-form">
+            <h2>Get in Touch With us</h2>
+            <form>
+              <input type="text" placeholder="First Name" required />
+              <input type="text" placeholder="Last Name" required />
+              <input type="tel" placeholder="Phone" />
+              <input type="email" placeholder="Email" required />
+              <textarea placeholder="Message"></textarea>
+              <button type="submit">Book Now</button>
+            </form>
+          </div>
+        </section>
+      
+
+        <section class="map-section">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50733.03258720364!2d-122.00073127130045!3d37.3705650547549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fc93670745819%3A0x6ffee5a9cf16a8d8!2sValley%20Home%20Builders%20inc.!5e0!3m2!1sen!2sin!4v1744027500371!5m2!1sen!2sin"
+           width="1230" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+           <!-- Footer Start -->
+    <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo & Contact -->
+          <div class="footer-section logo-section">
+            <img src="logo.png" alt="UNBWR Logo" class="footer-logo">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="footer-address">
+              Head Office - 2332 William Dr,<br>
+              No.2, Santa Clara - 95050,<br>
+              California, USA
+            </p>
+          </div>
+      
+          <!-- Site Links -->
+          <div class="footer-section">
+            <h3>Site Link</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="record.html">Set a Record</a></li>
+              <li><a href="#">Awards</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">My Certificate</a></li>
+              <li><a href="#">Stores</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+      
+          <!-- About Us -->
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <ul>
+              <li><a href="#">Objective</a></li>
+              <li><a href="#">Purpose</a></li>
+              <li><a href="#">Vision</a></li>
+              <li><a href="#">Mission</a></li>
+              <li><a href="#">Values</a></li>
+            </ul>
+          </div>
+      
+          <!-- Resources -->
+          <div class="footer-section">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Resource 1</a></li>
+              <li><a href="#">Resource 2</a></li>
+              <li><a href="#">Resource 3</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+          Copyright © 2025 UNBWR | United Nations Book of World Records
+        </div>
+      </footer>
+      <!-- Footer End -->
+      
+    </body>
+    </html>

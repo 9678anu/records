@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United Nation Book of World Records</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+  const mobileSidebar = document.querySelector('.mobile-sidebar');
+  const overlay = document.createElement('div');
+  overlay.className = 'overlay';
+  document.body.appendChild(overlay);
+  
+  // Create close button
+  const closeBtn = document.createElement('button');
+  closeBtn.className = 'close-btn';
+  closeBtn.innerHTML = '&times;';
+  const sidebarHeader = document.createElement('div');
+  sidebarHeader.className = 'sidebar-header';
+  sidebarHeader.innerHTML = `
+    <div class="sidebar-logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+  `;
+  sidebarHeader.appendChild(closeBtn);
+  mobileSidebar.insertBefore(sidebarHeader, mobileSidebar.firstChild);
+
+  // Toggle mobile menu
+  function toggleMenu() {
+    mobileMenuBtn.classList.toggle('active');
+    mobileSidebar.classList.toggle('active');
+    overlay.classList.toggle('active');
+    document.body.classList.toggle('no-scroll');
+  }
+
+  mobileMenuBtn.addEventListener('click', toggleMenu);
+  closeBtn.addEventListener('click', toggleMenu);
+  overlay.addEventListener('click', toggleMenu);
+  
+  // Improved dropdown toggle
+  const mobileDropBtns = document.querySelectorAll('.mobile-dropbtn');
+  mobileDropBtns.forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const dropdown = this.closest('.mobile-dropdown');
+      dropdown.classList.toggle('active');
+    });
+  });
+});
+    </script>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<div class="header">
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+  </div>
+  
+  <!-- Desktop Navigation -->
+  <nav class="desktop-nav">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <a href="#" class="dropbtn">About <i class="dropdown-arrow">▼</i></a>
+      <div class="dropdown-content">
+        <a href="about.html">About Us</a>
+        <a href="#">Documents</a>
+        <a href="#">Why UNBWR?</a>
+      </div>
+    </div>
+    <a href="record.html">Set A Record</a>
+    <a href="award.html">Awards</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="certificate.html">Find your Certificate</a>
+    <a href="store.html">Our Store</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  
+  <!-- Mobile Menu Button -->
+  <div class="mobile-menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
+  <!-- Mobile Sidebar -->
+  <div class="mobile-sidebar">
+    <div class="sidebar-logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <div class="mobile-dropdown">
+        <a href="#" class="mobile-dropbtn">About <i class="dropdown-arrow">▼</i></a>
+        <div class="mobile-dropdown-content">
+          <a href="about.html">About Us</a>
+          <a href="#">Documents</a>
+          <a href="#">Why UNBWR?</a>
+        </div>
+      </div>
+      <a href="record.html">Set A Record</a>
+      <a href="award.html">Awards</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="certificate.html">Find your Certificate</a>
+      <a href="store.html">Our Store</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</div>
+        <section class="hero">
+          <div class="hero-content">
+            <h1>About</h1>
+            <p class="link-line">• About < <a href="index.html">Home</a></p>
+          </div>
+        </section>
+<!-- hero section end  -->
+<section class="intro">
+  <div class="left"><h3>established in 2025</h3></div>
+  <div class="right">
+    <p>The United Nation Book of World Records is the Part Unit of “United Nation Global Services” (Registered Organization under the Government of California, The United States of America).</p>
+    <p>It is accredited by the UN IGO and the United Nations Accreditation for International Standard Organizations (UNISO).</p>
+    <p>It has membership status with the United States of America Presidential Advisory Board, and Presidential Award Forum...</p>
+    <p>We also provide platforms for Awards, Talent Recognition, Corporate Honors, etc.</p>
+    <p><img src="https://media-hosting.imagekit.io/97304f1451594cf5/Sign.png?Expires=1838568333&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=nSKuhJ-lGSsDYjzDna9MJ97m4Lf-35QroGc6sywlpf4xWGIIwo8Qt30qb3VFkb5oUXlm7R-yPw53mjAfuDOhxUENNVsLZy0c4WktN6HMm1VPcs6sWnhfqK5Y1H8GLpi5~CYV8A~Vzdbg~oJPUXWRWfnqI8R-uMe5uU5aoYKoTVWH9xGKQnE8SRPFjaEAnm5DgW62pcK2ADLU8eGR-C6Zl4d14Lbx-REZiiRVPgCX5jVuy14sc~LzCRXual4rbT3iucmLsYUvAeftIUHDyF3~dLwcPt1E3ybLfop7vzUDLbmx67X2V6CPLnS5f7lNhaBcI39a04UwN~9dEFMJniQYPQ__"
+       alt="Signature" class="signature"><br><strong>President</strong></p>
+  </div>
+</section>
+
+<!-- Purpose -->
+<section class="purpose">
+  <div class="content-container">
+    <h2 data-aos="fade-left">purpose of unbwr</h2>
+    <ul data-aos="fade-right">
+      <li>We ignite opportunity by setting the world records.</li>
+      <li>We ignite opportunity by breaking the world records.</li>
+      <li>We help people to realize their potential.</li>
+      <li>We inspire the lives to be inspirational and motivational people.</li>
+      <li>We motivate and entertain through our unique platform.</li>
+      <li>We provide platform for Business Awards, Talent Awards, Fashion Awards, etc.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Mission Vision Values -->
+<section class="mvv">
+  <div class="box">
+    <h3>Mission Of UNBWR</h3>
+    <ul>
+      <li>To provide the motivational platform for record-setting.</li>
+      <li>Nurture innovative talent.</li>
+      <li>Break records with thought leadership.</li>
+    </ul>
+  </div>
+  <div class="box">
+    <h3>Vision Of UNBWR</h3>
+    <ul>
+      <li>To inspire the world by connecting talent.</li>
+      <li>To be a renowned Book of Records.</li>
+      <li>Provide service by recognizing motivation and inspiration.</li>
+    </ul>
+  </div>
+  <div class="box">
+    <h3>Values Of UNBWR</h3>
+    <ul>
+      <li>Honesty, Gratitude, Influence, and Empathy.</li>
+      <li>Integrity and trust.</li>
+      <li>Dignity of every applicant.</li>
+      <li><a href="#">Read More ...</a></li>
+    </ul>
+  </div>
+</section>
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo & Contact -->
+          <div class="footer-section logo-section">
+            <img src="logo.png" alt="UNBWR Logo" class="footer-logo">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="footer-address">
+              Head Office - 2332 William Dr,<br>
+              No.2, Santa Clara - 95050,<br>
+              California, USA
+            </p>
+          </div>
+      
+          <!-- Site Links -->
+          <div class="footer-section">
+            <h3>Site Link</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="record.html">Set a Record</a></li>
+              <li><a href="award.html">Awards</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="certificate.html">My Certificate</a></li>
+              <li><a href="store.html">Stores</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+      
+          <!-- About Us -->
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <ul>
+              <li><a href="#">Objective</a></li>
+              <li><a href="#">Purpose</a></li>
+              <li><a href="#">Vision</a></li>
+              <li><a href="#">Mission</a></li>
+              <li><a href="#">Values</a></li>
+            </ul>
+          </div>
+      
+          <!-- Resources -->
+          <div class="footer-section">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Resource 1</a></li>
+              <li><a href="#">Resource 2</a></li>
+              <li><a href="#">Resource 3</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+          Copyright © 2025 UNBWR | United Nations Book of World Records
+        </div>
+      </footer>
+      <!-- Footer End -->
+      
+    </body>
+    </html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United Nation Book of World Records</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+  const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+  const mobileSidebar = document.querySelector('.mobile-sidebar');
+  const overlay = document.createElement('div');
+  overlay.className = 'overlay';
+  document.body.appendChild(overlay);
+  
+  // Toggle mobile menu
+  mobileMenuBtn.addEventListener('click', function() {
+    this.classList.toggle('active');
+    mobileSidebar.classList.toggle('active');
+    overlay.classList.toggle('active');
+  });
+  
+  // Close menu when clicking overlay
+  overlay.addEventListener('click', function() {
+    mobileMenuBtn.classList.remove('active');
+    mobileSidebar.classList.remove('active');
+    this.classList.remove('active');
+  });
+  
+  // Toggle mobile dropdowns
+  const mobileDropBtns = document.querySelectorAll('.mobile-dropbtn');
+  mobileDropBtns.forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const dropdownContent = this.nextElementSibling;
+      dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+      this.querySelector('.dropdown-arrow').style.transform = dropdownContent.style.display === 'block' ? 'rotate(180deg)' : 'rotate(0)';
+    });
+  });
+});
+    </script>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<div class="header">
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+  </div>
+  
+  <!-- Desktop Navigation -->
+  <nav class="desktop-nav">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <a href="#" class="dropbtn">About <i class="dropdown-arrow">▼</i></a>
+      <div class="dropdown-content">
+        <a href="about.html">About Us</a>
+        <a href="#">Documents</a>
+        <a href="#">Why UNBWR?</a>
+      </div>
+    </div>
+    <a href="record.html">Set A Record</a>
+    <a href="award.html">Awards</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="certificate.html">Find your Certificate</a>
+    <a href="store.html">Our Store</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  
+  <!-- Mobile Menu Button -->
+  <div class="mobile-menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
+  <!-- Mobile Sidebar -->
+  <div class="mobile-sidebar">
+    <div class="sidebar-logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <div class="mobile-dropdown">
+        <a href="#" class="mobile-dropbtn">About <i class="dropdown-arrow">▼</i></a>
+        <div class="mobile-dropdown-content">
+          <a href="about.html">About Us</a>
+          <a href="#">Documents</a>
+          <a href="#">Why UNBWR?</a>
+        </div>
+      </div>
+      <a href="record.html">Set A Record</a>
+      <a href="award.html">Awards</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="certificate.html">Find your Certificate</a>
+      <a href="store.html">Our Store</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</div>
+        <section class="hero">
+          <div class="hero-content">
+            <h1>Set A Record</h1>
+            <p class="link-line">• Record < <a href="index.html">Home</a></p>
+          </div>
+        </section>
+
+
+        <section class="info-section">
+            <div class="text">
+              <h3>The UNBWR</h3>
+              <p>The United Nation Book of World Records (UNBWR), USA stores and publishes the unbreakable records with ideas, model, item, and T-shirt.</p>
+              <button>Categories of Record Setting</button>
+            </div>
+            <div class="image">
+              <img src="https://media-hosting.imagekit.io/699da3750a2d426b/Moc-1-ovu127u7bw5bx7zqhiq7z7wx88o1b35rwruls8dgmo-removebg-preview.png?Expires=1838570181&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=ha3BZIy3B2oHWMb8gVE3eBwEB1PtDMWCiAoz-aWYFJTHFN~ctfOMMU7hcxPDOJfb5blun14wVyb6xPRT9KIrQUYVHizn~ulUqwp-5b4szCO8a94pgN9Dci~awThTNIoTp0zi8Ar4q0euoLhP~vyKi0x-6kPY8ALmBFWjOfSja0OWBlY1rUEfAla2c8tsqIJvXi9axTuQH52-HIWth8L3Uj0Z83Z5w67Qqpi8~F5iwcl7HbYzKPWwdjyjPK0yIo-dKf0tv4OBXwtTml~8WzE6EviNDdGGQ-JtJyWRFO1wStaU861ioBx2zLSpLZRSZNvTf946L8dYJFPPG7mxfp01CQ__" alt="UNBWR Merchandise" />
+            </div>
+          </section>
+        
+          <section class="steps">
+            <div>
+            <h2>Process and Procedure</h2>
+            <p>Below are the simplified steps for the application process and procedure:</p></div>
+            <ol>
+              <li>Fill the online form given on the website.</li>
+              <li>Immediate reply from UNBWR Organization.</li>
+              <li>Read Accept Terms and Conditions and confirm via form.</li>
+              <li>Review committee will issue report.</li>
+              <li>Declaration of record from UNBWR USA.</li>
+            </ol>
+          </section>
+        
+          <section class="policies">
+            <h2>Record Policies</h2>
+            <ul>
+              <li>Record title should be unique.</li>
+              <li>Details must be filled accurately.</li>
+              <li>Video/photo proof is mandatory.</li>
+              <li>Process requires 30 days for certificate.</li>
+              <li>UNBWR has rights to accept or reject based on verification.</li>
+            </ul>
+          </section>
+        
+          <section class="consultancy">
+            <h2>Record Consultancy</h2>
+            <p>If you want to apply for a new record title and you seek consultancy, kindly fill the application form. The fee is non-refundable once submitted.</p>
+          </section>
+        
+          <section class="legal">
+            <h2>Legal Points</h2>
+            <p>The awarded certificate should not be reproduced without prior permission. All disputes are subject to the jurisdiction of California, USA.</p>
+          </section>
+        
+            <!-- Footer Start -->
+    <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo & Contact -->
+          <div class="footer-section logo-section">
+            <img src="logo.png" alt="UNBWR Logo" class="footer-logo">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="footer-address">
+              Head Office - 2332 William Dr,<br>
+              No.2, Santa Clara - 95050,<br>
+              California, USA
+            </p>
+          </div>
+      
+          <!-- Site Links -->
+          <div class="footer-section">
+            <h3>Site Link</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="record.html">Set a Record</a></li>
+              <li><a href="#">Awards</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">My Certificate</a></li>
+              <li><a href="#">Stores</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+      
+          <!-- About Us -->
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <ul>
+              <li><a href="#">Objective</a></li>
+              <li><a href="#">Purpose</a></li>
+              <li><a href="#">Vision</a></li>
+              <li><a href="#">Mission</a></li>
+              <li><a href="#">Values</a></li>
+            </ul>
+          </div>
+      
+          <!-- Resources -->
+          <div class="footer-section">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Resource 1</a></li>
+              <li><a href="#">Resource 2</a></li>
+              <li><a href="#">Resource 3</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+          Copyright © 2025 UNBWR | United Nations Book of World Records
+        </div>
+      </footer>
+      <!-- Footer End -->
+      
+    </body>
+    </html>

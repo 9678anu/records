@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United Nation Book of World Records</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+  const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+  const mobileSidebar = document.querySelector('.mobile-sidebar');
+  const overlay = document.createElement('div');
+  overlay.className = 'overlay';
+  document.body.appendChild(overlay);
+   
+  // Toggle mobile menu
+  mobileMenuBtn.addEventListener('click', function() {
+    this.classList.toggle('active');
+    mobileSidebar.classList.toggle('active');
+    overlay.classList.toggle('active');
+  });
+  
+  // Close menu when clicking overlay
+  overlay.addEventListener('click', function() {
+    mobileMenuBtn.classList.remove('active');
+    mobileSidebar.classList.remove('active');
+    this.classList.remove('active');
+  });
+  
+  // Toggle mobile dropdowns
+  const mobileDropBtns = document.querySelectorAll('.mobile-dropbtn');
+  mobileDropBtns.forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const dropdownContent = this.nextElementSibling;
+      dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+      this.querySelector('.dropdown-arrow').style.transform = dropdownContent.style.display === 'block' ? 'rotate(180deg)' : 'rotate(0)';
+    });
+  });
+});
+    </script>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<div class="header">
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+  </div>
+  
+  <!-- Desktop Navigation -->
+  <nav class="desktop-nav">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <a href="#" class="dropbtn">About <i class="dropdown-arrow">▼</i></a>
+      <div class="dropdown-content">
+        <a href="about.html">About Us</a>
+        <a href="#">Documents</a>
+        <a href="#">Why UNBWR?</a>
+      </div>
+    </div>
+    <a href="record.html">Set A Record</a>
+    <a href="award.html">Awards</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="certificate.html">Find your Certificate</a>
+    <a href="store.html">Our Store</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  
+  <!-- Mobile Menu Button -->
+  <div class="mobile-menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
+  <!-- Mobile Sidebar -->
+  <div class="mobile-sidebar">
+    <div class="sidebar-logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <div class="mobile-dropdown">
+        <a href="#" class="mobile-dropbtn">About <i class="dropdown-arrow">▼</i></a>
+        <div class="mobile-dropdown-content">
+          <a href="about.html">About Us</a>
+          <a href="#">Documents</a>
+          <a href="#">Why UNBWR?</a>
+        </div>
+      </div>
+      <a href="record.html">Set A Record</a>
+      <a href="award.html">Awards</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="certificate.html">Find your Certificate</a>
+      <a href="store.html">Our Store</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</div>
+        <section class="hero">
+          <div class="hero-content">
+            <h1>Find Your Certificate</h1>
+            <p class="link-line">• Certificate < <a href="index.html">Home</a></p>
+          </div>
+        </section>
+<!-- certificate start -->
+
+<section class="form-container">
+  <h2>Submit Your Details</h2>
+  <form action="#" method="POST" enctype="multipart/form-data">
+      <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your full name">
+      </div>
+      <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+      </div>
+      <div class="form-group">
+          <label for="country">Country:</label>
+          <select id="country" name="country" required onchange="updateCities()">
+              <option value="">Select a Country</option>
+              <!-- Countries will be populated dynamically via JavaScript -->
+          </select>
+      </div>
+      <div class="form-group">
+          <label for="city">City:</label>
+          <select id="city" name="city" required>
+              <option value="">Select a City</option>
+              <!-- Cities will be populated dynamically via JavaScript -->
+          </select>
+      </div>
+      <div class="form-group">
+          <label for="id-proof">Upload Aadhaar Proof:</label>
+          <input type="file" id="id-proof-aadhaar" name="id_proof_aadhaar" accept="image/*,application/pdf" required>
+      </div>
+      <div class="form-group">
+          <label for="pan-proof">Upload PAN Proof:</label>
+          <input type="file" id="pan-proof" name="pan_proof" accept="image/*,application/pdf" required>
+      </div>
+      <button type="submit">Submit</button>
+  </form>
+</section>
+           <!-- Footer Start -->
+    <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo & Contact -->
+          <div class="footer-section logo-section">
+            <img src="logo.png" alt="UNBWR Logo" class="footer-logo">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="footer-address">
+              Head Office - 2332 William Dr,<br>
+              No.2, Santa Clara - 95050,<br>
+              California, USA
+            </p>
+          </div>
+      
+          <!-- Site Links -->
+          <div class="footer-section">
+            <h3>Site Link</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="record.html">Set a Record</a></li>
+              <li><a href="#">Awards</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">My Certificate</a></li>
+              <li><a href="#">Stores</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+      
+          <!-- About Us -->
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <ul>
+              <li><a href="#">Objective</a></li>
+              <li><a href="#">Purpose</a></li>
+              <li><a href="#">Vision</a></li>
+              <li><a href="#">Mission</a></li>
+              <li><a href="#">Values</a></li>
+            </ul>
+          </div>
+      
+          <!-- Resources -->
+          <div class="footer-section">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Resource 1</a></li>
+              <li><a href="#">Resource 2</a></li>
+              <li><a href="#">Resource 3</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+          Copyright © 2025 UNBWR | United Nations Book of World Records
+        </div>
+      </footer>
+      <!-- Footer End -->
+      <script>
+        const countriesAndCities = {
+            "India": ["Mumbai", "Delhi", "Bangalore", "Chennai", "Kolkata"],
+            "USA": ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix"],
+            "UK": ["London", "Manchester", "Birmingham", "Glasgow", "Liverpool"]
+        };
+    
+        // Populate country dropdown on page load
+        window.onload = function() {
+            const countrySelect = document.getElementById("country");
+            for (let country in countriesAndCities) {
+                let option = document.createElement("option");
+                option.value = country;
+                option.text = country;
+                countrySelect.appendChild(option);
+            }
+        };
+    
+        // Update city dropdown based on selected country
+        function updateCities() {
+            const countrySelect = document.getElementById("country");
+            const citySelect = document.getElementById("city");
+            const selectedCountry = countrySelect.value;
+    
+            // Clear existing options
+            citySelect.innerHTML = '<option value="">Select a City</option>';
+    
+            if (selectedCountry && countriesAndCities[selectedCountry]) {
+                countriesAndCities[selectedCountry].forEach(city => {
+                    let option = document.createElement("option");
+                    option.value = city;
+                    option.text = city;
+                    citySelect.appendChild(option);
+                });
+            }
+        }
+    </script>
+    </body>
+    </html>
