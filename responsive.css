@@ -76,13 +76,13 @@
       margin: 15px 0;
     }
     .objective-image-container img {
-      width: 400px;
+      width: 300px;
     }
     .objective h2 {
-      font-size: 40px;
+      font-size: 36px;
     }
     .objective p {
-      font-size: 14px;
+      font-size: 12px;
     }
   }
   
@@ -92,13 +92,13 @@
       margin: 10px 0;
     }
     .objective-image-container img {
-      width: 300px;
+      width: 200px;
     }
     .objective h2 {
-      font-size: 32px;
+      font-size: 28px;
     }
     .objective p {
-      font-size: 12px;
+      font-size: 10px;
     }
   }
   
@@ -199,7 +199,7 @@
       padding: 25px 15px;
     }
     .footer-section {
-      flex: 1 1 180px;
+      flex: 1;
     }
     .footer-logo {
       width: 80px;
@@ -223,7 +223,7 @@
       padding: 20px 10px;
     }
     .footer-section {
-      flex: 1 1 150px;
+      flex: 1;
     }
     .footer-logo {
       width: 60px;
@@ -644,6 +644,7 @@
     }
     .achievement-image-container img {
       width: 30%;
+      margin-top: 20px;
     }
   }
   
@@ -653,9 +654,9 @@
     }
     .achievement-image-container img {
       width: 40%;
+      margin-top: 20px;
     }
   }
-  
   /* Responsive Adjustments for Contact Main Section */
   @media (max-width: 768px) {
     .contact-main {
