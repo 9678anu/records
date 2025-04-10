@@ -199,7 +199,7 @@
       padding: 25px 15px;
     }
     .footer-section {
-      flex: 1;
+      display: inline-block;
     }
     .footer-logo {
       width: 80px;
@@ -223,7 +223,7 @@
       padding: 20px 10px;
     }
     .footer-section {
-      flex: 1;
+      display: inline-block;
     }
     .footer-logo {
       width: 60px;
