@@ -105,7 +105,7 @@
     </nav>
   </div>
 </div>
-        <section class="hero">
+        <section class="hero2">
           <div class="hero-content">
             <h1>Find Your Certificate</h1>
             <p class="link-line">• Certificate < <a href="index.html">Home</a></p>
@@ -113,7 +113,7 @@
         </section>
 <!-- certificate start -->
 
-<section class="form-container">
+<!-- <section class="form-container">
   <h2>Submit Your Details</h2>
   <form action="https://formsubmit.co/divyavarshney20041711@gmail.com" method="POST" enctype="multipart/form-data">
       <div class="form-group">
@@ -132,14 +132,12 @@
           <label for="country">Country:</label>
           <select id="country" name="country" required onchange="updateCities()">
               <option value="">Select a Country</option>
-              <!-- Countries will be populated dynamically via JavaScript -->
           </select>
       </div>
       <div class="form-group">
           <label for="city">City:</label>
           <select id="city" name="city" required>
               <option value="">Select a City</option>
-              <!-- Cities will be populated dynamically via JavaScript -->
           </select>
       </div>
       <div class="form-group">
@@ -152,8 +150,138 @@
       </div>
       <button type="submit">Submit</button>
   </form>
+</section> -->
+    
+<section class="form-container">
+  <h2>Submit Your Details</h2>
+  <form id="multiStepForm" action="https://formsubmit.co/divyavarshney20041711@gmail.com" method="POST" enctype="multipart/form-data">
+    
+    <!-- Step 1 -->
+    <div class="form-step" id="step1">
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" name="name" required placeholder="Enter your full name" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" name="email" required placeholder="Enter your email" />
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="phone" required placeholder="Enter your phone number" />
+      </div>
+      <div class="form-group">
+        <label for="country">Country:</label>
+        <select name="country" id="country" required onchange="updateCities()">
+          <option value="">Select a Country</option>
+          <option value="India">India</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+          <option value="Canada">Canada</option>
+          <option value="Australia">Australia</option>
+          <option value="Germany">Germany</option>
+          <option value="France">France</option>
+          <option value="Japan">Japan</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="city">City:</label>
+        <select name="city" id="city" required>
+          <option value="">Select a City</option>
+        </select>
+      </div>
+      <button type="button" onclick="nextStep(2)">Next</button>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="form-step" id="step2" style="display:none;">
+      <div class="form-group">
+        <label for="aadhaar">Upload Aadhaar Proof:</label>
+        <input type="file" name="aadhaar" accept="image/*,application/pdf" required />
+      </div>
+      <div class="form-group">
+        <label for="pan">Upload PAN Proof:</label>
+        <input type="file" name="pan" accept="image/*,application/pdf" required />
+      </div>
+      <button type="button" onclick="previousStep(1)">Previous</button>
+<button type="button" onclick="nextStep(3)">Next</button>
+    </div>
+
+    <!-- Step 3 -->
+    <!-- Step 3 -->
+<div class="form-step" id="step3" style="display:none;">
+  <div class="form-group">
+    <label for="award">Which certificate/award do you want?</label>
+    <select name="award" required>
+      <option value="">Select an Award</option>
+
+      <optgroup label="1. World Record">
+        <option value="World Record">World Record</option>
+      </optgroup>
+
+      <optgroup label="2. Continental Record">
+        <option value="North American Record">North American Record</option>
+        <option value="South American Record">South American Record</option>
+        <option value="European Record">European Record</option>
+        <option value="African Record">African Record</option>
+        <option value="Asian Record">Asian Record</option>
+        <option value="Oceania Record">Oceania Record</option>
+      </optgroup>
+
+      <optgroup label="3. National Record">
+        <option value="National Record">National Record</option>
+      </optgroup>
+
+      <optgroup label="4. Youth Awards">
+        <option value="Youth Scientific Educational Award">Youth Scientific Educational Award</option>
+        <option value="Youth Humanities Research Award">Youth Humanities Research Award</option>
+        <option value="Youth Commercial Educational Award">Youth Commercial Educational Award</option>
+      </optgroup>
+
+      <optgroup label="5. Champion/Sports Awards">
+        <option value="Platinum Award">Platinum Award</option>
+        <option value="Diamond Award">Diamond Award</option>
+        <option value="Gold Award">Gold Award</option>
+        <option value="Silver Award">Silver Award</option>
+        <option value="Bronze Award">Bronze Award</option>
+      </optgroup>
+
+      <optgroup label="6. Education">
+        <option value="Award for Educational Achievement">Award for Educational Achievement</option>
+        <option value="Award for Educational Excellence">Award for Educational Excellence</option>
+      </optgroup>
+
+      <optgroup label="7. Police & Military Volunteers">
+        <option value="Medal of Nation’s Service">Medal of Nation’s Service</option>
+        <option value="Medal of International Service">Medal of International Service</option>
+      </optgroup>
+
+      <optgroup label="8. Journalist Awards">
+        <option value="Nation’s Journalist Award">Nation’s Journalist Award</option>
+        <option value="International Journalist Award">International Journalist Award</option>
+      </optgroup>
+
+      <optgroup label="9. National Health Practitioner Awards">
+        <option value="National Health Practitioner - National Award">National Award</option>
+        <option value="National Health Practitioner - International Award">International Award</option>
+      </optgroup>
+    </select>
+  </div>
+
+  <div class="form-group1">
+    <label>
+      <input type="checkbox" name="declaration" required />
+      I hereby declare that all the information provided is true and I agree to the terms and conditions.
+    </label>
+  </div>
+  <button type="button" onclick="previousStep(2)">Previous</button>
+  <button type="submit">Submit</button>
+</div>
+
+  </form>
 </section>
-           <!-- Footer Start -->
+
+<!-- Footer Start -->
     <footer class="footer">
         <div class="footer-container">
           <!-- Logo & Contact -->
@@ -166,9 +294,8 @@
                 <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
             <p class="footer-address">
-              Head Office - 2332 William Dr,<br>
-              No.2, Santa Clara - 95050,<br>
-              California, USA
+              Delhi,India
+
             </p>
           </div>
       
@@ -179,11 +306,11 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="record.html">Set a Record</a></li>
-              <li><a href="#">Awards</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">My Certificate</a></li>
-              <li><a href="#">Stores</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="award.html">Awards</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="certificate.html">My Certificate</a></li>
+              <li><a href="store.html">Stores</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
             </ul>
           </div>
       
@@ -198,16 +325,6 @@
               <li><a href="#">Values</a></li>
             </ul>
           </div>
-      
-          <!-- Resources -->
-          <div class="footer-section">
-            <h3>Resources</h3>
-            <ul>
-              <li><a href="#">Resource 1</a></li>
-              <li><a href="#">Resource 2</a></li>
-              <li><a href="#">Resource 3</a></li>
-            </ul>
-          </div>
         </div>
       
         <!-- Bottom Bar -->
@@ -216,42 +333,68 @@
         </div>
       </footer>
       <!-- Footer End -->
-      <script>
-        const countriesAndCities = {
-            "India": ["Mumbai", "Delhi", "Bangalore", "Chennai", "Kolkata"],
-            "USA": ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix"],
-            "UK": ["London", "Manchester", "Birmingham", "Glasgow", "Liverpool"]
-        };
-    
-        // Populate country dropdown on page load
-        window.onload = function() {
-            const countrySelect = document.getElementById("country");
-            for (let country in countriesAndCities) {
-                let option = document.createElement("option");
-                option.value = country;
-                option.text = country;
-                countrySelect.appendChild(option);
-            }
-        };
-    
-        // Update city dropdown based on selected country
-        function updateCities() {
-            const countrySelect = document.getElementById("country");
-            const citySelect = document.getElementById("city");
-            const selectedCountry = countrySelect.value;
-    
-            // Clear existing options
-            citySelect.innerHTML = '<option value="">Select a City</option>';
-    
-            if (selectedCountry && countriesAndCities[selectedCountry]) {
-                countriesAndCities[selectedCountry].forEach(city => {
-                    let option = document.createElement("option");
-                    option.value = city;
-                    option.text = city;
-                    citySelect.appendChild(option);
-                });
-            }
-        }
-    </script>
+
+  <script>
+  let currentStep = 1;
+
+  // Show current step and hide others
+  function showStep(stepNumber) {
+    const steps = document.querySelectorAll(".form-step");
+    steps.forEach((step, index) => {
+      step.style.display = index + 1 === stepNumber ? "block" : "none";
+    });
+    currentStep = stepNumber;
+  }
+
+  // Move to the next step after validating current fields
+  function nextStep(stepNumber) {
+    const currentFields = document.querySelectorAll(`#step${currentStep} input, #step${currentStep} select`);
+    let valid = true;
+
+    currentFields.forEach(field => {
+      if (!field.checkValidity()) {
+        field.reportValidity();
+        valid = false;
+      }
+    });
+
+    if (valid) {
+      showStep(stepNumber);
+    }
+  }
+
+  // Move to previous step
+  function previousStep(stepNumber) {
+    showStep(stepNumber);
+  }
+
+  // Populate cities based on selected country
+  function updateCities() {
+    const country = document.getElementById("country").value;
+    const cityDropdown = document.getElementById("city");
+
+    cityDropdown.innerHTML = '<option value="">Select a City</option>';
+
+    let cities = [];
+    if (country === "India") {
+      cities = ["Delhi", "Mumbai", "Bangalore", "Kolkata"];
+    } else if (country === "USA") {
+      cities = ["New York", "Los Angeles", "Chicago", "Houston"];
+    }
+
+    cities.forEach(city => {
+      const option = document.createElement("option");
+      option.value = city;
+      option.textContent = city;
+      cityDropdown.appendChild(option);
+    });
+  }
+
+  // Initialize
+  window.onload = () => {
+    showStep(1);
+  };
+</script>
+
     </body>
     </html>

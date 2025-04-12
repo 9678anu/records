@@ -70,7 +70,7 @@
     <a href="award.html">Awards</a>
     <a href="gallery.html">Gallery</a>
     <a href="certificate.html">Find your Certificate</a>
-    <a href="store.html">Our Store</a>
+    <a href="store.html">Our Product</a>
     <a href="contact.html">Contact</a>
   </nav>
   
@@ -105,7 +105,7 @@
     </nav>
   </div>
 </div>
-        <section class="hero">
+        <section class="hero6">
           <div class="hero-content">
             <h1>Our Store</h1>
             <p class="link-line">• Store < <a href="index.html">Home</a></p>
@@ -125,6 +125,188 @@
             </div>
           </div>
         </section>
+        <!-- product details -->
+       
+     
+          <section class="products-container">
+            <h2>Our Merchandise</h2>
+            <div class="product-grid">
+              <!-- Product Card -->
+              <div class="product-card" data-id="1">
+                <img src="images/shirt.jpg" alt="Shirt">
+                <h3>UNBWR Shirt</h3>
+                <p>Comfortable premium cotton shirt with UNBWR branding. <br><strong>Material:</strong> 100% Cotton <br><strong>Available Sizes:</strong> S, M, L, XL</p>
+                <span class="price">₹799</span>
+                <select class="size-select">
+                  <option value="S">Small</option>
+                  <option value="M">Medium</option>
+                  <option value="L">Large</option>
+                  <option value="XL">X-Large</option>
+                </select>
+                <div class="button-group">
+                  <button class="btn btn-buy" onclick="addToCart(1, 'UNBWR Shirt', 799)">Buy Now</button>
+                  <button class="btn btn-know" onclick="showDetails('UNBWR Shirt', 'Comfortable premium cotton shirt with UNBWR branding. Perfect for formal and casual occasions.')">Know More</button>
+                </div>
+              </div>
+        
+              <div class="product-card" data-id="2">
+                <img src="images/tshirt.jpg" alt="T-Shirt">
+                <h3>UNBWR T-Shirt</h3>
+                <p>Soft and stylish T-shirt for everyday wear. <br><strong>Material:</strong> Cotton Blend <br><strong>Available Sizes:</strong> S, M, L</p>
+                <span class="price">₹599</span>
+                <select class="size-select">
+                  <option value="S">Small</option>
+                  <option value="M">Medium</option>
+                  <option value="L">Large</option>
+                </select>
+                <div class="button-group">
+                  <button class="btn btn-buy" onclick="addToCart(2, 'UNBWR T-Shirt', 599)">Buy Now</button>
+                  <button class="btn btn-know" onclick="showDetails('UNBWR T-Shirt', 'Soft cotton blend T-shirt with custom logo, ideal for casual wear.')">Know More</button>
+                </div>
+              </div>
+        
+              <div class="product-card" data-id="3">
+                <img src="images/cap.jpg" alt="Cap">
+                <h3>UNBWR Cap</h3>
+                <p>Adjustable fit cap with embroidered logo. <br><strong>Material:</strong> Polyester <br><strong>Size:</strong> One Size</p>
+                <span class="price">₹299</span>
+                <select class="size-select">
+                  <option value="One Size">One Size</option>
+                </select>
+                <div class="button-group">
+                  <button class="btn btn-buy" onclick="addToCart(3, 'UNBWR Cap', 299)">Buy Now</button>
+                  <button class="btn btn-know" onclick="showDetails('UNBWR Cap', 'Durable polyester cap with adjustable strap, perfect for outdoor activities.')">Know More</button>
+                </div>
+              </div>
+        
+              <div class="product-card" data-id="4">
+                <img src="images/bottle.jpg" alt="Bottle">
+                <h3>UNBWR Bottle</h3>
+                <p>Stainless steel water bottle, eco-friendly. <br><strong>Material:</strong> Stainless Steel <br><strong>Capacity:</strong> 750ml</p>
+                <span class="price">₹449</span>
+                <select class="size-select">
+                  <option value="750ml">750ml</option>
+                </select>
+                <div class="button-group">
+                  <button class="btn btn-buy" onclick="addToCart(4, 'UNBWR Bottle', 449)">Buy Now</button>
+                  <button class="btn btn-know" onclick="showDetails('UNBWR Bottle', 'Leak-proof stainless steel bottle, keeps beverages hot or cold for hours.')">Know More</button>
+                </div>
+              </div>
+        
+              <div class="product-card" data-id="5">
+                <img src="images/cup.jpg" alt="Cup">
+                <h3>UNBWR Mug</h3>
+                <p>Ceramic mug with heat-sensitive print. <br><strong>Material:</strong> Ceramic <br><strong>Capacity:</strong> 350ml</p>
+                <span class="price">₹349</span>
+                <select class="size-select">
+                  <option value="350ml">350ml</option>
+                </select>
+                <div class="button-group">
+                  <button class="btn btn-buy" onclick="addToCart(5, 'UNBWR Mug', 349)">Buy Now</button>
+                  <button class="btn btn-know" onclick="showDetails('UNBWR Mug', 'Heat-sensitive ceramic mug, changes design with hot beverages.')">Know More</button>
+                </div>
+              </div>
+        
+              <div class="product-card" data-id="6">
+                <img src="images/frame.jpg" alt="Frame">
+                <h3>UNBWR Frame</h3>
+                <p>Elegant wooden frame for awards. <br><strong>Material:</strong> Wood <br><strong>Size:</strong> A4</p>
+                <span class="price">₹999</span>
+                <select class="size-select">
+                  <option value="A4">A4</option>
+                </select>
+                <div class="button-group">
+                  <button class="btn btn-buy" onclick="addToCart(6, 'UNBWR Frame', 999)">Buy Now</button>
+                  <button class="btn btn-know" onclick="showDetails('UNBWR Frame', 'Sleek wooden frame, ideal for certificates and awards.')">Know More</button>
+                </div>
+              </div>
+        
+              <div class="product-card" data-id="7">
+                <img src="images/bag.jpg" alt="Bag">
+                <h3>UNBWR Bag</h3>
+                <p>Spacious and stylish bag. <br><strong>Material:</strong> Canvas <br><strong>Size:</strong> Standard</p>
+                <span class="price">₹699</span>
+                <select class="size-select">
+                  <option value="Standard">Standard</option>
+                </select>
+                <div class="button-group">
+                  <button class="btn btn-buy" onclick="addToCart(7, 'UNBWR Bag', 699)">Buy Now</button>
+                  <button class="btn btn-know" onclick="showDetails('UNBWR Bag', 'Durable canvas bag with multiple compartments for daily use.')">Know More</button>
+                </div>
+              </div>
+        
+              <div class="product-card" data-id="8">
+                <img src="images/box.jpg" alt="Box">
+                <h3>UNBWR Box</h3>
+                <p>Premium gift box for mementos. <br><strong>Material:</strong> Hardboard <br><strong>Size:</strong> Medium</p>
+                <span class="price">₹499</span>
+                <select class="size-select">
+                  <option value="Medium">Medium</option>
+                </select>
+                <div class="button-group">
+                  <button class="btn btn-buy" onclick="addToCart(8, 'UNBWR Box', 499)">Buy Now</button>
+                  <button class="btn btn-know" onclick="showDetails('UNBWR Box', 'Sturdy hardboard box to store certificates, medals, or gifts.')">Know More</button>
+                </div>
+              </div>
+            </div>
+          </section>
+        
+          <script>
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        
+            function saveCart() {
+              localStorage.setItem('cart', JSON.stringify(cart));
+            }
+        
+            function sendEmailNotification(name, price, size) {
+              // Placeholder for email notification
+              // In a real application, this would make an API call to a backend
+              const emailContent = `
+                New item added to cart:
+                Product: ${name}
+                Price: ₹${price}
+                Size: ${size}
+              `;
+              console.log('Email Notification:', emailContent);
+              alert('Email notification sent for: ' + name + ' (' + size + ')'); // Temporary alert for demo
+        
+              // Example backend API call (uncomment and configure with your backend)
+              /*
+              fetch('/send-email', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                  to: 'user@example.com', // Replace with user's email
+                  subject: 'Item Added to Cart',
+                  body: emailContent
+                })
+              })
+              .then(response => response.json())
+              .then(data => console.log('Email sent:', data))
+              .catch(error => console.error('Email error:', error));
+              */
+            }
+        
+            function addToCart(id, name, price) {
+              const size = document.querySelector(`.product-card[data-id="${id}"] .size-select`).value;
+              const existingItem = cart.find(item => item.id === id && item.size === size);
+        
+              if (existingItem) {
+                alert('Item already in cart with this size!');
+              } else {
+                cart.push({ id, name, price, size });
+                saveCart();
+                sendEmailNotification(name, price, size);
+                alert(`${name} (${size}) added to cart!`);
+              }
+            }
+        
+            function showDetails(name, details) {
+              alert(`${name}\n\n${details}`);
+            }
+          </script>
+      
+          
         
            <!-- Footer Start -->
     <footer class="footer">
@@ -171,16 +353,6 @@
               <li><a href="#">Values</a></li>
             </ul>
           </div>
-      
-          <!-- Resources -->
-          <div class="footer-section">
-            <h3>Resources</h3>
-            <ul>
-              <li><a href="#">Resource 1</a></li>
-              <li><a href="#">Resource 2</a></li>
-              <li><a href="#">Resource 3</a></li>
-            </ul>
-          </div>
         </div>
       
         <!-- Bottom Bar -->
@@ -188,7 +360,6 @@
           Copyright © 2020 UNBWR | United Nation Book of World Records
         </div>
       </footer>
-      <!-- Footer End -->
-      
+      <!-- Footer End -->  
     </body>
     </html>
